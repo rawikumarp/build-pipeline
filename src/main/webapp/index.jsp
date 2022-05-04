@@ -5,7 +5,7 @@
 <font size="20" color="#00FF7F"><p>Belandur</font></p>
 <font size="20" color="#0000ff"><p>Near IT Block </font></p>
 <font size="20" color="#808000">Bengaluru<p></font></p>
-<font size="20" color="#808000">pin-560035<p></font></p>
+<font size="20" color="#808000">Pin-560035<p></font></p>
 
 <body>
 </html>
