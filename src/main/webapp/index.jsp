@@ -1,7 +1,7 @@
 <html>
 <body>
 <font size="20" color="#FF4500"><p>Welcome to Infosys</font></p>
-<font size="20" color="#000080"><p>Tech park</font></p>
+<font size="20" color="#000080"><p>Eco Tech park</font></p>
 <font size="20" color="#00FF7F"><p>Belandur</font></p>
 <font size="20" color="#0000ff"><p>Near IT Block-II </font></p>
 <font size="20" color="#808000">Bengaluru<p></font></p>
