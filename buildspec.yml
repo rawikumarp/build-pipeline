@@ -6,7 +6,9 @@ phases:
     commands:
       - echo Logging in to Amazon ECR...
       - aws --version
-      - apt-get install maven -y
+      - cd /opt
+      - wget https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz
+      - tar -xvf apache-maven-3.8.6-bin.tar.gz
       - mvn --version
      # - aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email
       - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 514887167484.dkr.ecr.ap-south-1.amazonaws.com
