@@ -6,6 +6,8 @@ phases:
     commands:
       - echo Logging in to Amazon ECR...
       - aws --version
+      - sudo apt install openjdk-11-jdk -y
+      - java -version
       - wget https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz
       - tar -xvf apache-maven-3.8.6-bin.tar.gz
       - mvn --version
