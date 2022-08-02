@@ -6,6 +6,8 @@ phases:
     commands:
       - echo Logging in to Amazon ECR...
       - aws --version
+      - apt-get install maven -y
+      - mvn --version
      # - aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email
       - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 514887167484.dkr.ecr.ap-south-1.amazonaws.com
       - REPOSITORY_URI=514887167484.dkr.ecr.ap-south-1.amazonaws.com/buildpipeline
@@ -14,6 +16,7 @@ phases:
      #- IMAGE_TAG=latest
   build:
     commands:
+      - mvn clean package
       - echo Build started on `date`
       - echo Building the Docker image...
       - docker login -u rawikumarp -p $password
